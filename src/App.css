@@ -1,0 +1,39 @@
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+table{
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    border-color: black;
+    border: solid;
+
+}
+th{
+    background:black;
+    border: 2px red;
+    width: 30%;
+    height: 50px;
+    color: white;
+    font-weight: bolder;
+}
+td{
+    background: rgba(212, 212, 233, 0.969);
+    border: 2px red;
+    width: 30%;
+    height: 50px;
+    text-align: center;
+}
+
+button{
+    background-color: red;
+    border: none;
+    width: 70%;
+    height: 30PX;
+    border-radius: 7PX;
+
+}
