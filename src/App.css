@@ -22,11 +22,12 @@ th{
     font-weight: bolder;
 }
 td{
-    background: rgba(212, 212, 233, 0.969);
+   
     border: 2px red;
     width: 30%;
     height: 50px;
     text-align: center;
+    border: 1px solid black;
 }
 
 button{
@@ -35,5 +36,27 @@ button{
     width: 70%;
     height: 30PX;
     border-radius: 7PX;
+   
+
+}
+
+button:active{
+    background-color: rgb(208, 255, 0);
+    
+}
+
+button:hover{
+   
+    background-color: white;
+    color: red;
+
+}
+
+tr:hover{
+    background-color:rgb(0, 0, 0);
+    color :white;
+    font-weight: bolder;
+    font-size: large;
+    transition: 0.8s;
 
 }
