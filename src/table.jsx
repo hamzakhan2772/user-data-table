@@ -3,7 +3,9 @@ import { useState } from "react"
 function Box({ Data }) {
 
     const [Userdata, setUserdata] = useState(Data)
+    {
 
+    }
     return (
         <>
 
@@ -11,12 +13,12 @@ function Box({ Data }) {
             <table border="3">
                 <thead>
                     <tr>
-                       
+
                         <th>NAME</th>
                         <th>PHONE</th>
                         <th>EMAIL</th>
                         <th style={{ backgroundColor: "red" }}>Delete</th>
-                         <th>id</th>
+                        <th>id</th>
                     </tr>
                 </thead>
                 {Userdata.map((data) => (
@@ -25,11 +27,13 @@ function Box({ Data }) {
                         <td>{data.Phone}</td>
                         <td>{data.email}</td>
                         <td><button
-                            onClick={() =>
+                            onClick={async () => {
+                                await new Promise(res => setTimeout(res, 1000));
                                 setUserdata(
                                     Userdata.filter((user) => user.NAME !== data.NAME)
+
                                 )
-                            }
+                            }}
                         >
                             REMOVE
                         </button></td>
